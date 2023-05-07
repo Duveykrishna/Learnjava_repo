@@ -8,20 +8,8 @@
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "none",
-			"installMaven": "true",
-			"mavenVersion": "3.8.6",
+			"installMaven": "false",
 			"installGradle": "false"
-		}
-	},
-
-	// Configure tool-specific properties.
-	"customizations": {
-		// Configure properties specific to VS Code.
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"streetsidesoftware.code-spell-checker"
-			]
 		}
 	}
 
@@ -31,6 +19,11 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "java -version",
 
+	// Configure tool-specific properties.
+	// "customizations": {},
+
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
+
+	"runArgs": ["--name", "headfirst_java"]
 }
